@@ -13,52 +13,118 @@
       background-color: #f4f4f9;
       color: #333;
     }
+
     header {
       background-color: #4CAF50;
       color: white;
       text-align: center;
       padding: 1em 0;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5em;
     }
+
     header p {
       font-size: 1.2em;
       margin: 0;
     }
+
     .container {
       padding: 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
+
     section {
       margin-bottom: 40px;
     }
+
     h2 {
       color: #4CAF50;
       border-bottom: 2px solid #4CAF50;
       padding-bottom: 10px;
     }
-    .contact-info, .skills-list, .project-list {
+
+    ul {
       list-style: none;
       padding: 0;
     }
-    .contact-info li, .skills-list li, .project-list li {
+
+    li {
       margin-bottom: 10px;
     }
-    .contact-info a, .project-list a {
+
+    .contact-info a,
+    .project-list a {
       color: #4CAF50;
       text-decoration: none;
     }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 10px;
-      position: fixed;
-      width: 100%;
+      position: relative;
       bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      ul {
+        font-size: 0.9em;
+      }
+
+      footer {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header p {
+        font-size: 0.9em;
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      ul {
+        font-size: 0.85em;
+      }
+
+      footer {
+        font-size: 0.85em;
+        padding: 8px;
+      }
     }
   </style>
 </head>
@@ -71,7 +137,7 @@
 
   <div class="container">
 
-    <section id="about">
+    <section id="Objective">
       <h2>About Me</h2>
       <p>Motivated and dedicated Electrical and Electronics graduate with strong foundational knowledge in JavaScript and Python, seeking an entry-level developer position. Skilled in software development, debugging, and teamwork with a commitment to continuous learning and growth in the field of technology.</p>
     </section>
@@ -94,6 +160,15 @@
         <li>Debugging, Troubleshooting, Clean Code Practices</li>
       </ul>
     </section>
+
+    <section id="Skills">
+        <h2>Additional Skills</h2>
+        <ul class="skills-list">
+          <li>Strong teamwork and communication skills</li>
+          <li>Ability to gather and evaluate user feedback</li>
+          <li>Problem-solving and algorithm design </li>
+        </ul>
+      </section>
 
     <section id="projects">
       <h2>Projects</h2>
@@ -119,10 +194,6 @@
   <footer>
     <p>© 2025 Srivatsav Venkatayogi. All Rights Reserved.</p>
   </footer>
-
-  <script>
-    // Add interactivity here if needed in future
-  </script>
 
 </body>
 </html>
