@@ -1,4 +1,4 @@
-This file is the main HTML page for a personal portfolio website. It uses Bootstrap for styling and layout, and includes custom CSS for additional design elements. The page is structured into several sections:
+This is my personal portfolio website. It uses Bootstrap for styling and layout, and includes custom CSS for additional design elements. The page is structured into several sections:
 
 Navbar: A fixed-top navigation bar with links to different sections: About, Skills, Projects, and Contact.
 
